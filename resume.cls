@@ -86,14 +86,14 @@
 %----------------------------------------------------------------------------------------
 
 \let\ori@document=\document
-\renewcommand{\document}[4]{
+\renewcommand{\document}[5]{
   \ori@document  % Begin document
 %   \printname % Print the name specified with \name
     \begin{center}
         \MakeUppercase{\namesize\bf \@name}
         \vspace{0.5em} \\
-        {#2} {#3} \\ 
-        {#1} {#4} \\ 
+        {#2} {#1} {#4} \\ 
+        {#5} {#3} \\ 
         \vspace{2em}
     \newline    
     \end{center}

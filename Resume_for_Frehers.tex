@@ -21,8 +21,9 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
-
-\usepackage[left=0.5in,top=0.45in,right=0.5in,bottom=0.45in]{geometry} % Document margins
+\usepackage{graphicx}
+\graphicspath{ {./} }
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Shang-Yun (Daniel) Yeh} % Your name
@@ -31,10 +32,11 @@
 % \address{ Github: https://github.com/danielwun} % Your phone number and email
 
 \begin{document}
-{\faPhone: (+1) 8586667085}
-{\faEnvelope: danielwun5@gmail.com}
-{  \faGithub: \url{https://github.com/danielwun}}
-{  \faLinkedin: \url{https://www.linkedin.com/in/shang-yun-yeh/}}
+{\faPhone: (858)666-7085}
+{\faEnvelope: shyeh@eng.ucsd.edu}
+{  \faGithub: \href{https://github.com/danielwun}{github.com/danielwun}}
+{  \faLinkedin: \href{https://www.linkedin.com/in/shang-yun-yeh/}{linkedin.com/in/shang-yun-yeh/}}
+{ \faHome: \href{https://shang-yun-portfolio-website.herokuapp.com/}{shang-yun-portfolio-website.herokuapp.com}}
 
 % \begin{rSection}{Objective}
 %  Seeking a software developer internship position, where I can 
@@ -48,15 +50,15 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
-{\bf University of California, San Diego (UCSD)} \hfill {\em La Jolla, CA} 
-\\ {M.S. in Computer Engineering \hfill {\em Jun. 2021}}
+{\bf University of California San Diego (UCSD)} \hfill {\em La Jolla, CA} 
+\\ {M.S. in Computer Engineering \hfill {\em Sep. 2019 - Jun. 2021}}
 \par
 {\bf National Chiao Tung University (NCTU)} \hfill {\em Hsinchu, Taiwan} 
-\\ {B.S. in College of Electrical Engineering, GPA (Last 60: 3.91/4.3) \hfill {\em Jun. 2018}}
+\\ {B.S. in College of Electrical Engineering, Last 60 GPA  3.91/4.3 \hfill {\em Sep.2014 - Jun. 2018}}
 \par
 {\bf Chalmers University of Technology} \hfill {\em Gothenburg, Sweden} 
-\\ {Exchange Study in Computer Science and Engineering GPA: 4/5 (Relevant Courses)}
-\hfill {\em Jun. 2018} 
+\\ {Exchange Study in Computer Science and Engineering Major GPA: 4/5 }
+\hfill {\em Jan. 2018 - Jun. 2018} 
 \par
 %Minor in Linguistics \smallskip \\
 %Member of Eta Kappa Nu \\
@@ -65,32 +67,84 @@
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	Relevant Course SECTION
+%	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-% \begin{rSection}{Relevant Courses}
+\begin{rSection}{Professional Skills}
 
-% {\bf In Campus} \\ Object-Oriented Programming, Data Structures, Introduction to Algorithms, Machine Learning, Operating Systems, Principle of Microcomputer, Computer Organization, Image Processing, Introduction to VLSI circuits, Statistics, Discrete Mathematics, Databases, Industrial Management
-% \par
-% % {\bf Online}
-% % \\ HTML, CSS, and JavaScript for Web Developers (Coursera), Python Data Structures (Coursera), Circuits and Electronics 1: Basic Circuit Analysis (Edx), Introduction to Probability - The Science of Uncertainty (Edx)
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 
-% %Minor in Linguistics \smallskip \\
-% %Member of Eta Kappa Nu \\
-% %Member of Upsilon Pi Epsilon \\
 
-% \end{rSection}
+Programming Languages\ &  
+Python,
+C/C++, 
+Java, 
+CSS, 
+HTML, 
+ReactJS, 
+JavaScript,
+SQL
+
+\\
+
+Technologies \ & 
+Git,
+Node.js,
+Express.js, 
+JQuery,
+MongoDB, 
+Heroku, 
+Bootstrap
+\\
+
+Machine Learning Algorithm \ & 
+CNN, 
+SVM, 
+Random Forest, 
+K-means Cluster, 
+Naive Bayes, 
+PCA
+\\
+\end{tabular}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	Relevant courses sections
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Relevant Courses}
+
+\textbf{Data Structures}, 
+\textbf{Algorithms}, 
+\textbf{Object-Oriented Programming}, 
+Statistical Learning, 
+Machine Learning, 
+Image Processing,
+Database,
+Operating Systems,
+Computer Organization,
+% Principle of Microcomputer, 
+Statistics, 
+Discrete Mathematics
+% Introduction to VLSI circuits,
+
+
+\end{rSection}
+
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Work Experience}
+\begin{rSection}{Experience}
 
 \begin{rSubsection}{Software Engineer Intern}{Jan. 2019 - Jun. 2019}{Han Yuan Co., Ltd}{Taipei, Taiwan}
-\item Developed and updated the company website using \textbf{ReactJS} based framework \textbf{GatsbyJS}.
-\item Designed visual layouts using \textbf{Bootstrap 4}, customized \textbf{Sass}, and rearranging web page structure and links.
+\item Led Development of the company's first website using \textbf{ReactJS} based framework \textbf{GatsbyJS}.
+\item Designed visual layouts using \textbf{Bootstrap 4}, customized \textbf{Sass} to rearrange web page structure and links.
 \item Stored products information from \textbf{HTML} to \textbf{Markdown} files and accessed them via \textbf{GraphQL}.
+\item Collaborated with customers by arranging monthly meetings to respond to their need and avoid time-wasting.
 % \item Revised existing product catalogs and documented new products for the company.
 % \item Used  to access products information from markdown files.
 
@@ -103,92 +157,30 @@
 %-----------------------------------------------------------------------------------------------
 \begin{rSection}{Projects}
 
-\begin{rSubsection}{Portfolio Website}{Jul. 2019 - Present}{Independent Project, Side Project}{}
+\begin{rSubsection}{Portfolio Website \scriptsize{\href{https://shang-yun-portfolio-website.herokuapp.com/}{\{Link\}}} }{Jul. 2019 - Present}{Independent Project, Side Project}{}
 \item Built front-end with \textbf{ReactJS}, \textbf{Bootstrap}, and \textbf{Sass} along with client-side rendering using React-router API.
 \item Deployed server-side rendering using \textbf{RESTful API} and authentication using \textbf{Node.js} with \textbf{Express}.
-\item Constructed a database which supports \textbf{CRUD} after authentication
-using \textbf{MongoDB}.
+\item Constructed a database with \textbf{MongoDB} to support \textbf{CRUD} after authentication.
 \end{rSubsection}
 
 % put something about machine learning
 \begin{rSubsection}{Human Age and Gender Classification}{Jun. 2017 - Jul. 2017}{Machine Learning Group Project}{}
 \item Screened out unqualified images by 15\% by pre-processing data with \textbf{OpenCV} face detection. 
-\item Reduced images' dimensions from 3600 to 50 by compressing data into a hidden layer of a \textbf{Neural Network}.
+\item Reduced images’ dimensions from 3600 to 50 by compressing data into a hidden layer of a \textbf{Neural Network}.
 \item Reached 12\% accuracy using \textbf{Random Forest} with 1000 trees and minimum 100 leaves.
 \item Boosted performance by 30\% by Data Augmentation and 27\% by extracting edges with Sobel operator.
-\item Our team got 50\% correctness using \textbf{Tensorflow} to implement \textbf{CNN} structure.
+\item Our team got 50\% correctness using \textbf{Tensorflow} to implement \textbf{Convolutional Neural Network} structure.
 \end{rSubsection}
  
-\begin{rSubsection}{Handwriting Number Classification}{May. 2017 - May. 2017}{Machine Learning Group Project}{}
+\begin{rSubsection}{Handwriting Number Classification}{ May. 2017}{Machine Learning Group Project}{}
 \item Attained 90\% accuracy by shrinking input dimension to 5 using \textbf{NN} and classified them with \textbf{Random Forest}. 
-\item Saved 8 working hours by sending commands to the terminal for finding the optimal parameters with \textbf{Python}.
-\item Improved 8\% accuracy implementing \textbf{v-SVM} algorithm while 9\% accuracy with \textbf{C-SVM} algorithm.
+\item Saved 8 hours by automating commands to the terminal for finding the optimal parameters with \textbf{Python}.
+\item Improved 8\% accuracy implementing \textbf{$\nu$-SVM} algorithm versus 9\% accuracy with C\textbf{-SVM} algorithm.
 
 \end{rSubsection}
  
 \end{rSection}
 % \newpage
-
-%----------------------------------------------------------------------------------------
-%	Relevant courses sections
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Relevant Courses}
-
-Data Structures, 
-Algorithms, 
-Object-Oriented Programming, 
-Operating Systems,
-Computer Organization,
-Statistical Learning, 
-Machine Learning, 
-Image Processing,
-% Principle of Microcomputer, 
-Statistics, 
-Discrete Mathematics
-% Introduction to VLSI circuits,
-
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Professional Skills}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages\ &  
-CSS, 
-HTML, 
-ReactJS, 
-SQL,  
-JavaScript, 
-
-C/C++, 
-Java, 
-Python \\
-
-Technologies \ & 
-Node.js, 
-Express.js, 
-MongoDB, 
-JQuery,
-GatsbyJs, 
-Git \\
-
-Machine Learning Algorithm \ & 
-NN,
-SVM,
-Random Forest,
-K-means Cluster,
-CNN,
-Naive Bayes,
-PCA
-\\
-\end{tabular}
-
-\end{rSection}
 
 
 %--------------------------------------------------------------------------------
